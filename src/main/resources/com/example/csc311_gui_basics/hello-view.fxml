@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="401.0" prefWidth="407.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc311_gui_basics.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label fx:id="whenLabel" textFill="#ffa63a">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+   </Label>
+    <ImageView fx:id="museumImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="file:/C:/Users/micha/IdeaProjects/CSC311_GUI_Basics/src/main/java/com/example/csc311_gui_basics/087.JPG" />
+        </image>
+    </ImageView>
+    <Label fx:id="whereLabel" textFill="#3cadae">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font></Label>
+    <Button fx:id="whereButton" onAction="#onWhereButtonClicked" text="Where was this taken?" />
+   <Button fx:id="invertButton" mnemonicParsing="false" onAction="#onRotateClick"  text="invert me" />
+</VBox>
